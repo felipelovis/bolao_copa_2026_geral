@@ -213,7 +213,7 @@ function renderizarJogos() {
                 <div class="fase-header">
                     <h2 class="fase-title">🏆 ${fase}</h2>
                     <div class="fase-prazo ${faseAberta ? 'aberta' : 'encerrada'}">
-                        ${faseAberta ? '⏰ ' + tempoRestante.texto : '🔒 Encerrado'}
+                        ${faseAberta ? '⏰ ' + tempoRestante.texto : '🔒 Indisponível'}
                     </div>
                 </div>
         `;
