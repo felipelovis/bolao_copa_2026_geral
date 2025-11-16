@@ -102,6 +102,8 @@ async function handleLogin(e) {
             
             loginScreen.style.display = 'none';
             appScreen.style.display = 'block';
+
+            document.getElementById('rankingSection').style.display = 'block';
             
             carregarDados();
         } else {
