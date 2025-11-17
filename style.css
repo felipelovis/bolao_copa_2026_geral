@@ -8,7 +8,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    background-image: url('foto_fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .container {
@@ -40,13 +45,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-
-    background-image: url('foto_fundo.png'); /* ou o nome que você deu */
+    min-height: 60vh;
+    
+    /* FUNDO DE GRAMADO */
+    background-image: url('foto_fundo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .login-box {
@@ -533,4 +538,16 @@ body {
         font-size: 1.1rem;
         padding: 15px 30px;
     }
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
 }
