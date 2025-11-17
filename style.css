@@ -52,7 +52,9 @@ body {
 }
 
 .login-box {
-    background: white;
+    background: rgba(255, 255, 255, 0.95); /* Branco semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    /*background: white;*/
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
