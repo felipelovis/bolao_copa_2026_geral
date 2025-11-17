@@ -5,18 +5,13 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('foto_fundo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    padding: 20px;
 }
 
-container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -46,17 +41,14 @@ container {
     justify-content: center;
     align-items: center;
     min-height: 60vh;
-    
-    
 }
 
 .login-box {
-    background: rgba(255, 255, 255, 0.95); /* Substitua o background existente */
-    backdrop-filter: blur(10px);
+    background: white;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
-    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 500px;
     width: 100%;
 }
 
@@ -98,28 +90,7 @@ container {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Efeito de ondulação ao clicar */
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
-}
-
-.btn:active::before {
-    width: 300px;
-    height: 300px;
+    transition: all 0.3s;
 }
 
 .btn-primary {
@@ -276,38 +247,18 @@ container {
     margin: 20px 0 15px 0;
 }
 
-/* ANIMAÇÕES */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
 .jogo-card {
-    background: rgba(255, 255, 255, 0.50);
-    backdrop-filter: blur(10px);
+    background: #f0f2f6;
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
     border: 2px solid #e0e0e0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* ← Mudança suave */
-    animation: fadeInUp 0.5s ease-out; /* ← Animação de entrada */
+    transition: all 0.3s;
 }
 
 .jogo-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(76, 175, 80, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-color: #4CAF50;
 }
 
@@ -339,22 +290,10 @@ container {
     transition: all 0.3s;
 }
 
-.gols-input:hover {
-    border-color: #aaa;
-    background: #fafafa;
-}
-
-
 .gols-input:focus {
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
-    transform: scale(1.05);
-    background: white;
-}
-
-.gols-input:not(:placeholder-shown) {
-    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
 }
 
 .gols-display {
@@ -470,6 +409,7 @@ container {
     color: #333;
 }
 
+
 .ranking-link-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -534,16 +474,4 @@ container {
         font-size: 1.1rem;
         padding: 15px 30px;
     }
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-    pointer-events: none;
 }
