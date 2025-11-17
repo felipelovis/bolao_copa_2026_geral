@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, rgba(31, 119, 180, 0.50) 0%, rgba(42, 159, 214, 0.50) 100%);
+    background: linear-gradient(135deg, rgba(31, 119, 180, 0.35) 0%, rgba(42, 159, 214, 0.35 100%);
     backdrop-filter: blur(10px);
     color: white;
     padding: 30px;
