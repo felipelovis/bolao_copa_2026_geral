@@ -47,11 +47,7 @@ body {
     align-items: center;
     min-height: 60vh;
     
-    /* FUNDO DE GRAMADO */
-    background-image: url('foto_fundo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    
 }
 
 .login-box {
