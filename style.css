@@ -19,6 +19,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95); /* Branco 95% opaco (5% transparente) */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco (opcional) */
 }
 
 .header {
